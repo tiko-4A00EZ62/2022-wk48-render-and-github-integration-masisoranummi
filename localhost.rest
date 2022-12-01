@@ -1,0 +1,28 @@
+GET http://localhost:5000/api/electricity
+
+###
+GET http://localhost:5000/api/electricity/1
+
+
+###
+POST http://localhost:5000/api/electricity HTTP/1.1
+content-type: application/json
+
+{
+    "month": "2022-02-20",
+    "used": 111.11,
+    "cost": 30
+}
+
+###
+PUT http://localhost:5000/api/electricity HTTP/1.1
+content-type: application/json
+
+{
+    "id": 5,
+    "month": "2022-02-20",
+    "used": 222.11,
+    "cost": 605
+}
+###
+DELETE http://localhost:5000/api/electricity/1
