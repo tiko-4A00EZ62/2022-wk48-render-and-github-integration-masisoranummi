@@ -6,4 +6,8 @@ app.use(express.json());
 
 app.use("/api/electricity", electricityRouter);
 
+app.get("/health", (req, res) => {
+    res.send("OK");
+});
+
 module.exports = app;
